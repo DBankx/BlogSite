@@ -1,0 +1,172 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+/* navbar styles */
+
+.navbar{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    letter-spacing: 4px;
+}
+
+.navbar-nav li{
+    margin: auto 5%;
+}
+
+.navbar li a{
+    color: black;
+}
+
+.navbar-nav li a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: aqua;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+.box h2{
+    color: white;
+    text-align: center;
+    word-spacing: 3px;
+    padding: 5%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+}
+
+@media(max-width: 768px){
+    .one {
+        margin-bottom: -70px;
+    }
+
+    .box h2{
+        color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5%;
+    font-size: 1.4rem;
+    font-weight: 600; 
+    }
+    
+    .btnx{
+        margin: 50% 10%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.box2{
+    max-width: 200px;
+    margin: 50px auto;
+    background: aqua;
+    border-radius: 10%;
+    background: rgb(0,255,255);
+    background: linear-gradient(313deg, rgba(0,255,255,1) 0%, rgba(47,181,177,1) 29%, rgba(73,73,135,1) 74%);
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btnx{
+    margin: 50px 50px;
+    border-radius: 5px;
+    background: rgb(0,255,255);
+    background: linear-gradient(313deg, rgba(0,255,255,1) 0%, rgba(47,181,177,1) 29%, rgba(73,73,135,1) 74%);
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.btnx h5{
+    padding: 6%;
+    letter-spacing: 4px;
+}
+
+.fas{
+    display: inline;
+}
+
+/* footer */
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: aqua;
+   color: white;
+   text-align: center;
+}
+
+
+
+.footer p {
+    padding:5% auto;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+    
+}
+
+
+/* modal section */
+
+
+
+
+.modal-title{
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* posts section */
+
+.posts{
+    margin-top: 2%;
+}
+
+.posts h2{
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+hr {
+    width: 30%;
+    text-align: center;
+    margin: 3% auto;
+}
+
+.post-links{
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: aqua;
+
+}
+
+.post-links:hover{
+    text-decoration: none;
+}
+
+/* about */
+
+.boxed{
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgb(0,255,255);
+    background: linear-gradient(313deg, rgba(0,255,255,1) 0%, rgba(47,181,177,1) 29%, rgba(73,73,135,1) 74%);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.note{
+    padding: 3%;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    color: white;
+}
