@@ -29,7 +29,7 @@
           <form action="/" method="POST">
             <div class="form-group">
               <label for="title" class="col-form-label">Title</label>
-              <input type="text" name="title" class="form-control" id="recipient-name">
+              <input type="text" name="title" class="form-control" id="recipient-name" autocomplete="off">
             </div>
             <div class="form-group">
               <label for="text" class="col-form-label">Body</label>
@@ -47,17 +47,31 @@
 
 
   <!-- Main Posts -->
-  <div class="container posts">
+  <div class="posts">
+    
   <% posts.forEach(function (post) { %>
-      <h2><%= post.postTitle %> </h2>
-      <% if ((post.postText).length > 100){ %> 
-      <p><%= (post.postText).slice(0, 100) %><a class="post-links" href="posts/<%=post.postTitle%>"> Read More...</a></p>
+    <form action="/delete" method="POST">
+    <div class="boxPost">
+      <div class="postWords">
+        <div class="postHeader">
+      <h2><%= post.name %> </h2>
+      <label class="checkbox-label">
+      <input class=".closeButton" type="checkbox" name="check" value="<%=post._id%>" onChange="this.form.submit()">
+    <span class="checkbox-custom"></span>
+    </label>
+    </div>
+      <% if ((post.post).length > 100){ %> 
+      <p><%= (post.post).slice(0, 100) %><a class="post-links" href="posts/<%=post.name%>"> Read More...</a></p>
       <hr>
     <%} else {%>
-        <p><%= post.postText %> </p>
+        <p><%= post.post %> </p>
         <hr>
     <%}%>
+  </div>
+  </div>
+</form>
  <% })%> 
+
 </div>
 
 <%- include('partials/footer') %>
